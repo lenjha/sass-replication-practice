@@ -1,0 +1,24 @@
+@import 'base/reset';
+@import 'abstracts/variables';
+@import 'layout/grid';
+@import 'abstracts/mixins';
+
+
+.wrapper
+.row {
+  width: 100%;
+  @extend %clearfix;
+}
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;
+  min-height: 1px;
+}
+
+
+nav .column-12 {
+  height: 10vh;
+  background-color: red;
+}
