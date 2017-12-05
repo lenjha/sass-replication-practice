@@ -11,7 +11,10 @@
 
 /*for fluid images*/
 img {
-  width: auto;
   max-width: 100%;
-  height: auto !important;
+}
+
+@mixin bg-img {
+  background-size: cover;
+  background-position: center;
 }

@@ -1,7 +1,7 @@
+@import 'abstracts/modules';
+@import 'components/modules';
 @import 'base/reset';
-@import 'abstracts/variables';
 @import 'layout/grid';
-@import 'abstracts/mixins';
 
 
 .wrapper
@@ -17,22 +17,105 @@
   min-height: 1px;
 }
 
+
+
 $breakpoint-mobile: 769px;
 
-@media (max-width: $breakpoint-mobile) {  
+@media (max-width: $breakpoint-mobile) {
   nav .column-12 {
     height: 10vh;
   }
+  .logo-img {
+    height: 40px;
+  }
   .hero .row {
     height: 60vh;
+    background-image: url("../img/bg-hero.png");
+    @include bg-img;
+  }
+  .hero-head {
+    color: white;
+    font-size: 2em;
+    line-height: 1.1em;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  .hero-p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.6em;
   }
   .location-form-green {
     @include location-form-green-small;
     @include location-form-green-medium;
   }
+
+  .location-form-holder {
+    text-align: center;
+    color: white;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+  }
+  .location-form-holder p {
+    width: auto;
+  }
+  .location-top-text {
+    font-weight: lighter;
+  }
+  .location-input {
+    background: none;
+    border-radius: 7px;
+    border: 2px white solid;
+    padding: 1rem;
+    float: left;
+    font-size: 1.3rem;
+    clear: both;
+  }
+  .location-submit-button {
+    @include location-submit-button;
+  }
+  .location-bottom-text {
+    clear: both;
+    font-size: 1.25em;
+    font-weight: lighter;
+  }
+
+  .event-info {
+    margin-top: 8%;
+  }
+
   .main {
     height: 290vh;
+    text-align: center;
+    padding: 20px;
   }
+  .main-title {
+    font-size: 1.45em;
+    line-height: 1.25em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+  }
+  .main-text {
+    font-size: 1.03em;
+    color: #808080;
+    line-height: 1.5em;
+  }
+
+  .card {
+    background: red;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .img-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+
   .numbers {
     height: 72vh;
   }
