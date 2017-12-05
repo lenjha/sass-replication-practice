@@ -102,6 +102,7 @@ $breakpoint-mobile: 769px;
     font-size: 1.03em;
     color: #808080;
     line-height: 1.5em;
+    margin-bottom: 40px;
   }
 
   .card {
@@ -110,10 +111,15 @@ $breakpoint-mobile: 769px;
     margin-bottom: 10%;
   }
 
+  .card img {
+    padding: 5px;
+  }
+
   .img-container {
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    border-radius: 50%;
   }
 
   .numbers {

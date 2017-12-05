@@ -287,17 +287,22 @@ img {
   .main-text {
     font-size: 1.03em;
     color: #808080;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    margin-bottom: 40px; }
 
   .card {
     background: red;
     width: 100%;
     margin-bottom: 10%; }
 
+  .card img {
+    padding: 5px; }
+
   .img-container {
     margin-left: auto;
     margin-right: auto;
-    width: 20%; }
+    width: 20%;
+    border-radius: 50%; }
 
   .numbers {
     height: 72vh; }
