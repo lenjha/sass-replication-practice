@@ -16,10 +16,100 @@
     }
 }
 
-@mixin location-form-green {
+@mixin location-form-green-small {
   height: 38vh;
   background: #0fb24b;
 }
+@mixin location-form-green-medium {
+  height: 36vh;
+  background: #0fb24b;
+}
+
+$breakpoint-tablet: 770px;
+@media (min-width: $breakpoint-tablet) {
+  nav .column-12 {
+    height: 10vh;
+  }
+  .hero .row {
+    height: 60vh;
+  }
+  .location-form-green {
+    @include location-form-green-medium;
+  }
+  .main {
+    height: 205vh;
+  }
+  .numbers {
+    height: 85vh;
+  }
+  .schedule {
+    height: 250vh;
+  }
+  .location-form-gray {
+    height: 35vh;
+  }
+  .faq {
+    height: 120vh;
+  }
+  .startups {
+    height: 85vh;
+  }
+  .carousel {
+    height: 100vh;
+  }
+  .partners {
+    height: 39vh;
+  }
+  .bottom-nav {
+    height: 32vh;
+  }
+  .footer {
+    height: 26vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav .column-12 {
+    height: 10vh;
+  }
+  .hero .row {
+    height: 60vh;
+  }
+  .location-form-green {
+    @include location-form-green-small;
+  }
+  .main {
+    height: 290vh;
+  }
+  .numbers {
+    height: 72vh;
+  }
+  .schedule {
+    height: 500vh;
+  }
+  .location-form-gray {
+    height: 40vh;
+  }
+  .faq {
+    height: 220vh;
+  }
+  .startups {
+    height: 95vh;
+  }
+  .carousel {
+    height: 110vh;
+  }
+  .partners {
+    height: 50vh;
+  }
+  .bottom-nav {
+    height: 40vh;
+  }
+  .footer {
+    height: 26vh;
+  }
+}
+
 
 $colors: (
   'black':$black,

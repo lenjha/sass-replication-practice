@@ -17,55 +17,47 @@
   min-height: 1px;
 }
 
+$breakpoint-mobile: 769px;
 
-nav .column-12 {
-  height: 10vh;
-}
-
-.hero .row {
-  height: 60vh;
-}
-
-.location-form-green {
-  @include location-form-green;
-}
-
-.main {
-  height: 290vh;
-}
-
-.numbers {
-  height: 72vh;
-}
-
-.schedule {
-  height: 500vh;
-}
-
-.location-form-gray {
-  height: 40vh;
-}
-
-.faq {
-  height: 220vh;
-}
-
-.startups {
-  height: 95vh;
-}
-
-.carousel {
-  height: 110vh;
-}
-
-.partners {
-  height: 50vh;
-}
-
-.bottom-nav {
-  height: 40vh;
-}
-
-.footer {
-  height: 26vh;
+@media (max-width: $breakpoint-mobile) {  
+  nav .column-12 {
+    height: 10vh;
+  }
+  .hero .row {
+    height: 60vh;
+  }
+  .location-form-green {
+    @include location-form-green-small;
+    @include location-form-green-medium;
+  }
+  .main {
+    height: 290vh;
+  }
+  .numbers {
+    height: 72vh;
+  }
+  .schedule {
+    height: 500vh;
+  }
+  .location-form-gray {
+    height: 40vh;
+  }
+  .faq {
+    height: 220vh;
+  }
+  .startups {
+    height: 95vh;
+  }
+  .carousel {
+    height: 110vh;
+  }
+  .partners {
+    height: 50vh;
+  }
+  .bottom-nav {
+    height: 40vh;
+  }
+  .footer {
+    height: 26vh;
+  }
 }
