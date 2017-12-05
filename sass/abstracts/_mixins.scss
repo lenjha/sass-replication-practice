@@ -15,3 +15,29 @@
         clear: both;
     }
 }
+
+@mixin location-form-green {
+  height: 38vh;
+  background: #0fb24b;
+}
+
+$colors: (
+  'black':$black,
+  'green':$green,
+  'gray':$gray,
+  'lightgray':$lightgray,
+  'photogreen':$photogreen,
+  'photomint':$photomint,
+  'footerblack':$footerblack,
+);
+
+@each $color, $hex in $colors {
+  .text-#{$color}
+  {
+    color: $hex;
+  }
+  .bg-#{$color}
+  {
+    background-color: $hex;
+  }
+}
